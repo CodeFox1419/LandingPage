@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+.container{
+    margin: auto;
+    width: 90%;
+}
+.container nav{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.container nav .logo{
+    height: 80%;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container nav .logo img{
+    width: 90px;
+    height: 30px;
+}
+.container nav ul{
+    padding: 10px;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.container nav ul li{
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.container nav ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #7b7979;
+    transition: .4s ease;
+}
+.container nav ul li:nth-child(4) a{
+    font-weight: bolder;
+    color: black;
+}
+.container nav ul li:nth-child(5) a{
+    padding: 10px 20px;
+    border-radius: 18px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+}
+.container nav ul li:nth-child(5) a:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+}
+.container nav ul li:nth-child(5) a:active{
+    transform: scale(0.90);
+}
+.container nav ul li a:hover{
+    transform: scale(1.15);
+    color: #cb6ce6;
+}
+.container nav ul li a:active{
+    transform: scale(0.90);
+}
+.container nav .menu{
+    display: none;
+}
+.container nav .menu .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 10px;
+    background-color: #cb6ce6;
+    transition: all 
+    0.3s ease-in-out;
+}
+.container .first{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.container .first .one{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+.container .first .one h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.container .first .one p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+    word-spacing: auto;
+}
+.container .first .one button{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+    transition: all 0.4s ease;
+}
+.container .first .one button:hover{
+    outline: none;
+    border: none;
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.container .first .one button:active{
+    transform: scale(0.90);
+}
+.container .first .two{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container .first .two img{
+    width: 90%;
+    height: 100%;
+    transition: linear 0.6s;
+}
+.container .first .two img:hover{
+    transform: scale(1.1);
+}
+.container .second{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+}
+.container .second .one{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .second .one img{
+    width: 100%;
+    height: 1005;
+    transition: linear 0.6s;
+}
+.container .second .one img:hover{
+    transform: scale(1.1);
+}
+.container .second .two{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.container .second .two h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.container .second .two p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+}
+.container .second .two button{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+    transition: all 0.4s ease;
+}
+.container .second .two button:hover{
+    outline: none;
+    border: none;
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.container .second .two button:active{
+    transform: scale(0.9);
+}
+.container .popular{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .popular .info{
+    width: 400px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+.container .popular .info h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.container .popular .info p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+    margin-top: 15px;
+}
+.container .popular .cards{
+    width: 1005;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.container .popular .cards .card{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+}
+.container .popular .cards .card:hover{
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+}
+.container .popular .cards .card img{
+    width: 84px;
+    height: 84px;
+}
+.container .popular .cards .card p{
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: black;
+}
+.container .three{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+}
+.container .three .one{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .three .one img{
+    width: 100%;
+    height: 1005;
+    transition: linear 0.6s;
+}
+.container .three .one img:hover{
+    transform: scale(1.1);
+}
+.container .three .two{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.container .three .two h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.container .three .two p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+}
+.container .three .two button{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+    transition: all 0.4s ease;
+}
+.container .three .two button:hover{
+    outline: none;
+    border: none;
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.container .three .two button:active{
+    transform: scale(0.9);
+}
+.container .four{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+.container .four .two{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .four .two img{
+    width: 100%;
+    height: 100%;
+    transition: linear 0.6s;
+}
+.container .four .two img:hover{
+    transform: scale(1.1);
+}
+.container .four .one{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.container .four .one h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.container .four .one p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+}
+.container .four .one button{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+    transition: all 0.4s ease;
+}
+.container .four .one button:hover{
+    outline: none;
+    border: none;
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.container .four .one button:active{
+    transform: scale(0.90);
+}
+.container footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container footer .center{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.container footer .center img{
+    height: 32px;
+    width: 84px;
+}
+.container footer .center p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+    text-align: center;
+}
+.container footer .center form{
+    width: 300px;
+    height: 45px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+    background-color: #cb6ce6;
+    transition:  0.6s ease;
+}
+.container footer .center form:hover{
+    transform: scale(1.05);
+}
+.container footer .center form input{
+    width: 60%;
+    height: 100%;
+    background: transparent;
+    border-radius: 22px;
+    outline: none;
+    border: none;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+input[type='text']::-webkit-input-placeholder{
+    color: white;
+    text-align: center;
+}
+.container footer .center form button{
+    width: 40%;
+    height: 100%;
+    border-radius: 22px;
+    background: black;
+    color: white;
+    transition: 0.6s ease-out;
+}
+.container footer .center form button:hover{
+    background-color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+.container footer .center form button:active{
+    transform: scale(0.90);
+}
+.container footer .center .icon{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.container footer .center .icon .icons{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset ;
+}
+.container footer .center .icon .icons:hover{
+    background-color: black;
+}
+.container footer .center .icon .icons i{
+    pointer-events: auto;
+    transition: 0.3s ease-in-out;
+}
+.container footer .center .icon .icons i:hover{
+    color: white;
+}
+.container footer .center p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b7979;
+    text-align: center;
+}
